@@ -1,16 +1,16 @@
 {
   "name": "coffee",
-  "version": "1.0.0",
-  "description": "",
-  "main": "Coffee.js",
+  "version": "2.0.0",
+  "description": "periodically disturbs mouse",
+  "main": "coffee.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Coffee.js"
+    "dev": "nodemon coffee.js",
+    "start": "node coffee.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Alex Abushanab, JP Angelle",
+  "license": "MIT",
   "dependencies": {
-    "nodemon": "^1.18.10",
-    "robotjs": "^0.5.1"
+    "nodemon": "2.0.2",
+    "robotjs": "0.6.0"
   }
 }
