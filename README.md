@@ -36,19 +36,31 @@ $ nvm use
 
 #### Running the App
 
-To install dependencies:
+##### Clone
+
+```sh
+$ git clone git@github.com:lexabu/Coffee.git
+```
+
+##### Change directory
+
+```sh
+cd Coffee
+```
+
+##### Install dependencies
 
 ```sh
 $ yarn
 ```
 
-To run script:
+##### Run script in production mode
 
 ```sh
 $ yarn start
 ```
 
-To run script in development mode:
+##### Run script in development mode
 
 ```sh
 $ yarn dev
