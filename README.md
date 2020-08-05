@@ -66,7 +66,7 @@ $ yarn start
 $ yarn dev
 ```
 
-##### Automate opening the app in Windows 10
+#### Automate opening the app in Windows 10
 
 If you prefer to have the app open at startup you can use the following method.
 
@@ -82,7 +82,7 @@ exit
 
 Create and add a visual basic script to the startup folder to run your batch file at startup. The default folder for start up files is `C:\Users\%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
 
-#### autostartcoffee.vbs
+##### autostartcoffee.vbs
 
 ```sh
 Set WshShell = CreateObject("WScript.Shell")
