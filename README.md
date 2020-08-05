@@ -66,13 +66,13 @@ $ yarn start
 $ yarn dev
 ```
 
-#### Automate opening the app in Windows 10
+##### Automate opening the app in Windows 10
 
 If you prefer to have the app open at startup you can use the following method.
 
 Create a batch file to automatically open the command prompt, change directories, and start the application. Save the below code as a .bat file and update the file address.
 
-#### movemouse.bat
+##### movemouse.bat
 
 ```sh
 start /MIN
