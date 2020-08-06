@@ -4,6 +4,7 @@
   "private": true,
   "description": "periodically disturbs mouse",
   "author": "Alex Abushanab, JP Angelle",
+  "main": "electron/main.js",
   "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -11,9 +12,12 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^1.1.1"
   },
   "scripts": {
+    "electron-dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -33,5 +37,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "electron": "^9.1.2",
+    "electron-util": "^0.14.2",
+    "wait-on": "^5.1.0"
   }
 }
