@@ -1,0 +1,7 @@
+.coffee-form {
+  margin: 20px 0;
+}
+
+.coffee-form > .ui.form > .field > .ui.input {
+  width: 100px;
+}
