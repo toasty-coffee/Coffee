@@ -45,7 +45,7 @@ $ git clone git@github.com:lexabu/Coffee.git
 ##### Change directory
 
 ```sh
-cd Coffee
+cd Coffee\coffee-electron
 ```
 
 ##### Install dependencies
@@ -63,7 +63,7 @@ $ yarn start
 ##### Run script in development mode
 
 ```sh
-$ yarn dev
+$ yarn electron-dev
 ```
 
 #### Automate opening the app in Windows 10
