@@ -45,9 +45,15 @@ class TrayGenerator {
   };
 
   createTray = () => {
-    this.tray = new Tray(path.join(__dirname, './trayIcon.png'));
-    this.tray.setIgnoreDoubleClickEvents(true);
+    if(process.platform==="darwin"){
+      this.tray = new Tray(path.join(__dirname, './trayIcon.png'));
+    }
 
+    if(process.platform==="win32"){
+      this.tray = new Tray(path.join(__dirname, './trayIcon.ico'),"12345678-1234-1234-1234-123456789012");
+    }
+    
+    this.tray.setIgnoreDoubleClickEvents(true);
     this.tray.on('click', this.toggleWindow);
     this.tray.on('right-click', this.rightClickMenu);
   };

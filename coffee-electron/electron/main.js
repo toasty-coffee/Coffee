@@ -20,10 +20,11 @@ const createMainWindow = () => {
     frame: false,
     fullscreenable: false,
     resizable: false,
+    skipTaskbar: true,
   });
 
   if (is.development) {
-    // mainWindow.webContents.openDevTools({ mode: 'detach' });
+    //mainWindow.webContents.openDevTools({ mode: 'detach' });
     mainWindow.loadURL('http://localhost:3000');
   } else {
     mainWindow.loadURL(`file://${path.join(__dirname, '../build/index.html')}`);
@@ -36,4 +37,6 @@ app.on('ready', () => {
   Tray.createTray();
 });
 
-app.dock.hide();
+if (process.platform==="darwin") { 
+  app.dock.hide();
+}
