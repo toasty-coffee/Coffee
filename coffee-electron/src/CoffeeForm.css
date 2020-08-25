@@ -4,4 +4,5 @@
 
 .coffee-form > .ui.form > .field > .ui.input {
   width: 100px;
+  display: block;
 }
